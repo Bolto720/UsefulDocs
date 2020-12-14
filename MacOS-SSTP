@@ -1,0 +1,31 @@
+1.     Launch Terminal
+
+2.     enter following command
+
+3.     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+
+4.     enter password if prompted
+
+5.     enter next command
+
+6.     brew install sstp-client (Make note of the Save location as you may need to make changes to step 10)
+
+7.     Then install iSSTP and move to applications
+
+8.     https://www.axot.org/2015/03/03/isstp-a-sstp-client-for-mac-osx/
+
+9.     another terminal session
+
+10.   sudo cp /usr/local/Cellar/sstp-client/1.0.12_1/sbin/sstpc /Applications/iSstp.app/Contents/Resources/sstpc
+
+11.   run the following commands
+
+12.   cd /Applications/iSstp.app/Contents/Resources
+
+13.   sudo rm installed
+
+14.   sudo sh ./install.sh
+
+15.   otool -L sstpc
+
+16.   and test
