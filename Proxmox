@@ -1,5 +1,7 @@
 If Proxmox fails to install at tty3 after DHCP leasing
 
+https://www.rpiathome.com/2020/10/21/proxmox-6-2-1-installation-fails-after-dhcp-lease-obtained/#comments
+
 $ chmod 1777 /tmp   
 $ apt update
 $ apt upgrade
