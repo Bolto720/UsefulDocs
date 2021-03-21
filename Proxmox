@@ -1,0 +1,9 @@
+If Proxmox fails to install at tty3 after DHCP leasing
+
+$ chmod 1777 /tmp   
+$ apt update
+$ apt upgrade
+$ Xorg -configure   
+$ mv /root/xorg.conf.new /etc/X11/xorg.conf
+$ vim /etc/X11/xorg.conf # update Driver in "Devices" section "amdgpu"/"nouveau"-> "fbdev" <-be sure to get all instances in the case of a multi-head card which tripped me up initially. 
+$ tty1 - ctrl+c - startx
